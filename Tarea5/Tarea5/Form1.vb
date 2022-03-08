@@ -1,8 +1,4 @@
 ﻿Public Class Form1
-    Private Sub lbl_mult_Click(sender As Object, e As EventArgs) Handles lbl_mult.Click
-
-    End Sub
-
     Private Sub btn_calcular_Click(sender As Object, e As EventArgs) Handles btn_calcular.Click
         Dim num, x, i, m As Integer
         x = 1
@@ -13,7 +9,7 @@
         lbl_fct.Text = x.ToString()
 
         For i = 0 To x
-            If (i Mod 4) Then
+            If (i Mod 4 = 0) Then
                 m = m + 1
             End If
         Next
